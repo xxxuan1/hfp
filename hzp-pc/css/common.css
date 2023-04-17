@@ -1,0 +1,369 @@
+/* 各个页面相同的样式表  头 尾*/
+
+/* 版心 */
+.wrapper {
+	width: 1250px;
+	margin: 0 auto;
+    /* background-color: blue; */
+	/* border: 1px solid #91ded5; */
+}
+
+.cd {
+	height: 50px;
+	/* background-color: aliceblue; */
+    /* background-color: blue; */
+}
+
+
+
+.cd .wrapper {
+	height: 50px;
+	background-color: #b8b4df;
+}
+
+
+.left {
+    float: left;
+    height: 50px;
+    width: 50px;
+}
+
+.left img {
+    margin-top: 4px;
+    margin-left: 3px;
+    height: 80%;
+    width: 80%;
+}
+
+.wrapper>input {
+    float: left;
+    height: 40px;
+    width: 300x;
+    margin-top: 4px;
+/*    border: 20 solid #666;
+    margin: .2rem .5333rem;
+    text-indent: 0.2rem;
+    border-radius: .1042rem; */
+}
+
+
+.wrapper>button {
+    position: absolute;
+/*    top: .265rem; */
+    width: 43px;
+    height: 32px;
+    margin-top: 7px;
+    margin-left: 23px;
+/*    border-radius: .1042rem;
+    background-color: skyblue;
+    font-size: .2rem; */
+}
+
+.cd .menu ul {
+	float: right;
+}
+
+
+.cd .menu li {
+	float: left;
+	line-height: 50px;
+	
+}
+
+/* 关于我们设置 */
+.cd .menu a {
+	padding: 0 16px;
+	border-right: 1px solid grey;
+	font-size: 14px;
+	color: black;
+}
+
+.cd .menu ul li ul li {
+	float: none;
+}
+
+.cd .menu ul li ul li a{
+	float: none;
+	width: 110px;
+	border-bottom: 1px solid rgba(153,153,102,0.3);
+}
+
+.cd .menu ul li ul{
+	margin-left: -15px;
+	position: absolute;
+	display: none;
+	border: 1px solid #9d9d9d;
+	background-color: #ebf1de;
+	margin-top: 3px;
+}
+
+.cd .menu ul li:hover ul{
+	display: block;
+}
+
+.cd .menu ul li ul li a:hover{
+	background-color: #009966;
+	color: #F0F8FF;
+}
+
+.header {
+    margin: 40px auto;
+    height: 50px;
+    /* background-color: #9d9d9d; */
+}
+
+.logo {
+    float: left;
+    width: 150px;
+    height: 50px;
+    /* background-color: pink; */
+}
+
+.logo h1 a {
+    display: block;
+    width: 150px;
+    height: 50px;
+    background-image: url(../img/logo.png);
+    background-size: contain;
+    font-size: 0;
+}
+
+.nav {
+    float: left;
+    margin-left: 30px;
+    height: 50px;
+    background-color: white;
+}
+
+.nav li {
+    float: left;
+    margin-right: 40px;
+    line-height: 50px;
+}
+
+.nav li a {
+    padding: 5px;
+}
+
+.nav li a:hover {
+    color: #b8b4df;
+    border-bottom: 1px solid #b8b4df;
+}
+
+.search {
+    position: relative;
+    float: left;
+    margin-left: 30px;
+    margin-top: 10px;
+    width: 150px;
+    height: 30px;
+    border-bottom: 2px solid #e7e7e7;
+}
+
+.search input {
+    padding-left: 30px;
+    height: 28px;
+    width: 150px;
+}
+
+.search input ::placeholder{
+    font-size: 14px;
+    color: #ccc;
+}
+
+.search span {
+    position: absolute;
+    display: inline-block;
+    left: 2px;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    /* background-color: pink; */
+    background-image: url(../img/sprites.png);
+    background-position: -79px -69px;
+}
+
+.shop {
+    position: relative;
+    float: left;
+    margin-top: 17px;
+    margin-left: 29px;
+    width: 23px;
+    height: 23px;
+    /* background-color: skyblue; */
+    background-image: url(../img/sprites.png);
+    background-position: -119px -69px;
+}
+
+.shop span{
+    position: absolute;
+    right: -13px;
+    top: -7px;
+    width: 20px;
+    height: 15px;
+    background-color: red;
+    border-radius: 8px;
+
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    line-height: 15px;
+}
+
+.ending {
+    height: 340px;
+    background-color: #b8b4df;
+}
+
+.ending .wrapper{
+    width: 1390px;
+}
+
+.ending .top {
+    padding-top: 50px;
+    padding-left: 130px;
+    height:160px ;
+    border-bottom: 1px solid #9d9d9d;
+}
+
+.ending .top li {
+    position: relative;
+    float: left;
+    margin-right: 280px;
+    width: 190px;
+    height: 58px;
+    /* background-color: pink; */
+    /* line-height: 58px; */
+}
+
+/* 伪元素 */
+.ending .top li:last-child {
+    margin-right: 0;
+}
+
+.ending .top li::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* display: inline-block; */
+    content: "";
+    width: 58px;
+    height: 58px;
+    background-image: url(../img/sprites.png);
+    vertical-align: middle;
+}
+
+.ending .top li span {
+    line-height: 58px;
+    margin-left: 75px;
+    font-size: 25px;
+    color: white;
+}
+
+/* 第二个里里面添加背景图位置属性 */
+.ending .top li:nth-child(2)::before {
+    background-position: -64px 0;
+}
+
+/* 第三个里里面添加背景图位置属性 */
+.ending .top li:nth-child(3)::before {
+    background-position: -130px 0;
+}
+
+.ending .bottom {
+    padding-top: 50px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+}
+.ending .bottom a {
+    font-size: 17px;
+    color: #fff;
+}
+
+.ending .bottom p {
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 轮播图
+.l {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 8rem;
+    overflow: hidden;
+    margin-bottom: .48rem;
+}
+
+.l ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 800%;
+}
+
+.l ul li {
+    float: left;
+    width: 20rem;
+    height: 8rem;
+}
+
+.l ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+.l ol {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 9rem;
+    background: rgba(0, 0, 0, .3);
+    border-radius: .2083rem;
+}
+
+.l ol li {
+    float: left;
+    display: block;
+    width: .2083rem;
+    height: .2083rem;
+    background-color: #fff;
+    margin: .0521rem .0833rem;
+    border-radius: 50%;
+} */
+
+/* .m,
+.s {
+    display: none;
+    position: absolute; */
+/*    top: 3.0313rem; */
+    width: 100px;
+    height: 200px;
+/*    background: rgba(0, 0, 0, .3);
+    color: #fff;
+    font-size: .3125rem;
+    text-align: center; */
+/*    line-height: .8333rem; */
+/* }
+
+.m {
+    left: 0;
+}
+
+.s {
+    right: 0;
+} */
+
+
